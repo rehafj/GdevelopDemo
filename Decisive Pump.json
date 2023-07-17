@@ -96,7 +96,19 @@
       "objectsGroups": [],
       "variables": [],
       "instances": [],
-      "objects": [],
+      "objects": [
+        {
+          "assetStoreId": "",
+          "name": "NewSprite",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": []
+        }
+      ],
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -108,6 +120,14 @@
               "parameters": [
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "AnimStopped"
+              },
+              "parameters": [
+                "NewSprite"
+              ]
             }
           ],
           "actions": [
@@ -118,8 +138,22 @@
               "parameters": [
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "NewSprite",
+                "\"168;48;48\""
+              ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
